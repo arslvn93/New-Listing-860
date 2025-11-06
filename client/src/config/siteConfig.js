@@ -1,7 +1,7 @@
 /**
  * Site Configuration
  * This file contains all configurable content for the website
- * Last updated: 2025-11-06T15:50:04.836Z
+ * Last updated: 2025-11-06T15:52:39.801Z
  */
 
 // contactInfo configuration
@@ -129,17 +129,7 @@ export const galleryImages = [
   }
 ];
 
-// heroVideo configuration
-// export const heroVideo = {
-//   url: "",
-//   type: "video/mp4",
-//   autoplay: true,
-//   loop: true,
-//   muted: true,
-//   playsInline: true
-// };
-
-// homeShowcaseSections configuration  
+// homeShowcaseSections configuration
 export const homeShowcaseSections = [
   {
     id: "section1",
@@ -169,15 +159,15 @@ export const homeShowcaseSections = [
 
 // neighborhood configuration
 export const neighborhood = {
-  name: "Texas City",
+  name: "Central Park Sec 1",
   city: "Texas City",
-  description: "Texas City's premier destination for culture, dining, and urban living.",
+  description: "Central Park Sec 1 sits in Texas City near Galveston Bay and local waterfront attractions, offering easy access to outdoor recreation and community amenities. Residents enjoy proximity to the Texas City Dike, local museums, a lively 6th Street corridor and several well-rated parks for families and weekend activities.",
   highlights: [
-    "Steps to theaters, dining, and entertainment venues",
-    "Direct access to PATH underground walkway", 
-    "TTC subway and streetcar connections",
-    "Walk to financial district and shopping",
-    "Vibrant urban lifestyle with excellent walk score"
+    "Texas City Dike — 5-mile scenic fishing pier with boating, beaches and water sports on Galveston Bay",
+    "Texas City Museum — interactive local history exhibits including artifacts related to the 1947 industrial disaster",
+    "6th Street Downtown Corridor — local shops, restaurants, live music and community festivals",
+    "Bay Street Park — trails, wildlife feeding opportunities and historical markers",
+    "Close to regional attractions such as Kemah Boardwalk and Moody Gardens (listed in nearby attractions)"
   ]
 };
 
@@ -185,45 +175,59 @@ export const neighborhood = {
 export const neighborhoodAmenities = [
   {
     id: 1,
-    name: "Local Grocery Store",
-    distance: "0.2 miles",
+    name: "Mainland Crossing (Shopping & services)",
+    distance: "",
     category: "shopping",
     iconName: "ShoppingBag"
   },
   {
     id: 2,
-    name: "Nearby Park",
-    distance: "0.1 miles", 
+    name: "Texas City Dike",
+    distance: "",
     category: "recreation",
     iconName: "Leaf"
   },
   {
     id: 3,
-    name: "Public School",
-    distance: "0.6 miles",
-    category: "education", 
+    name: "College of Mainland",
+    distance: "",
+    category: "education",
     iconName: "School"
   },
   {
     id: 4,
-    name: "Fine Dining",
-    distance: "0.2 miles",
+    name: "Tiphany’s Catering & Restaurant",
+    distance: "",
     category: "dining",
-    iconName: "Wine"
+    iconName: "Coffee"
   },
   {
     id: 5,
-    name: "Casual Dining",
-    distance: "0.4 miles",
+    name: "Cafe Petra Greek & Lebanese Restaurant",
+    distance: "",
     category: "dining",
     iconName: "Utensils"
   },
   {
     id: 6,
-    name: "Transit Station",
-    distance: "0.4 miles",
+    name: "Gulf Coast Transit District (GCTD)",
+    distance: "",
     category: "transportation",
-    iconName: "Train"
+    iconName: "Car"
+  },
+  {
+    id: 7,
+    name: "Tuscan Lakes Park",
+    distance: "",
+    category: "recreation",
+    iconName: "Users"
+  },
+  {
+    id: 8,
+    name: "Gulfway Plaza (local business & retail hub)",
+    distance: "",
+    category: "business",
+    iconName: "Wifi"
   }
 ];
 
@@ -232,74 +236,26 @@ export const neighborhoodStats = [
   {
     id: 1,
     title: "Walk Score",
-    value: "95/100",
-    caption: "Walker's Paradise",
+    value: "5/100",
+    caption: "Car-Dependent",
     iconName: "BadgeCheck",
     color: "bg-green-500"
   },
   {
     id: 2,
-    title: "Transit Score", 
-    value: "94/100",
-    caption: "Excellent Transit",
+    title: "Transit Score",
+    value: "11/100",
+    caption: "Minimal Transit",
     iconName: "Compass",
     color: "bg-blue-500"
   },
   {
     id: 3,
-    title: "School Rating",
-    value: "8/10", 
-    caption: "Great Schools",
-    iconName: "School",
+    title: "Bike Score",
+    value: "27/100",
+    caption: "Somewhat Bikeable",
+    iconName: "Bicycle",
     color: "bg-indigo-500"
-  },
-  {
-    id: 4,
-    title: "Commute Time",
-    value: "8 min",
-    caption: "To Financial District",
-    iconName: "Clock", 
-    color: "bg-amber-500"
-  }
-];
-
-// openHouseBenefits configuration
-export const openHouseBenefits = [
-  {
-    id: 1,
-    title: "Detailed Floor Plans",
-    description: "Complete architectural layouts showing the 4 bedroom, 2 bathroom configuration with precise measurements.",
-    iconName: "FileText"
-  },
-  {
-    id: 2,
-    title: "Recent Neighborhood Sales",
-    description: "Comparative market analysis of recent Detached sales in Texas City.",
-    iconName: "BarChart2"
-  },
-  {
-    id: 3,
-    title: "School District Information", 
-    description: "Dickinson ISD received a "B" rating from the Texas Education Agency (TEA) for the 2023-2024 academic year, indicating "Above Standard Achievement" in its Financial Integrity Rating System of Texas",
-    iconName: "GraduationCap"
-  },
-  {
-    id: 4,
-    title: "Property Inspection Report",
-    description: "Professional assessment highlighting recent upgrades and maintenance history.",
-    iconName: "CheckSquare"
-  },
-  {
-    id: 5,
-    title: "Financing Options Guide",
-    description: "Current mortgage rates and financing programs available for this price range.",
-    iconName: "DollarSign"
-  },
-  {
-    id: 6,
-    title: "Neighborhood Amenities Map",
-    description: "Interactive guide to nearby amenities and transportation options.",
-    iconName: "Map"
   }
 ];
 
@@ -313,48 +269,17 @@ export const openHouseDetails = {
   ctaText: "RSVP for Open House",
   virtualTourAvailable: false,
   virtualTourUrl: "",
-  allOpenHouses: [{"date":"Saturday, November 15, 2025","time":"2:00 PM - 4:00 PM"},{"date":"Saturday, November 22, 2025","time":"3:00 PM - 5:00 PM"}]
+  allOpenHouses: [
+    {
+      date: "Saturday, November 15, 2025",
+      time: "2:00 PM - 4:00 PM"
+    },
+    {
+      date: "Saturday, November 22, 2025",
+      time: "3:00 PM - 5:00 PM"
+    }
+  ]
 };
-
-// packageItems configuration
-export const packageItems = [
-  {
-    id: 1,
-    title: "Detailed Floor Plans",
-    description: "Complete architectural layouts showing the 4 bedroom, 2 bathroom configuration with precise measurements.",
-    iconName: "FileText"
-  },
-  {
-    id: 2,
-    title: "Recent Neighborhood Sales",
-    description: "Comparative market analysis of recent Detached sales in Texas City.",
-    iconName: "BarChart2"
-  },
-  {
-    id: 3,
-    title: "School District Information", 
-    description: "Dickinson ISD received a "B" rating from the Texas Education Agency (TEA) for the 2023-2024 academic year, indicating "Above Standard Achievement" in its Financial Integrity Rating System of Texas",
-    iconName: "GraduationCap"
-  },
-  {
-    id: 4,
-    title: "Property Inspection Report",
-    description: "Professional assessment highlighting recent upgrades and maintenance history.",
-    iconName: "CheckSquare"
-  },
-  {
-    id: 5,
-    title: "Financing Options Guide",
-    description: "Current mortgage rates and financing programs available for this price range.",
-    iconName: "DollarSign"
-  },
-  {
-    id: 6,
-    title: "Neighborhood Amenities Map",
-    description: "Interactive guide to nearby amenities and transportation options.",
-    iconName: "Map"
-  }
-];
 
 // property configuration
 export const property = {
@@ -376,7 +301,7 @@ export const property = {
   status: "For Sale",
   description: "Beautiful home, Taken well care of ",
   shortDescription: "4 BEDS + 2 BATHS in Texas City",
-longDescription: "New Community, Open Concept",
+  longDescription: "New Community, Open Concept",
   mainFeatures: [],
   propertyType: "Detached",
   heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1762403277253-IMG_3419_hdr.jpg",
@@ -396,7 +321,7 @@ export const siteBranding = {
   favicon: "/favicon.ico",
   colors: {
     primary: "#D9A566",
-    primaryDark: "#8B6839", 
+    primaryDark: "#8B6839",
     primaryLight: "#E6C38C",
     dark: "#111111",
     light: "#FFFFFF"
@@ -424,7 +349,7 @@ export const testimonials = [
   {
     id: 1,
     name: "David Chen",
-    role: "Recent Homebuyer", 
+    role: "Recent Homebuyer",
     content: "Yvonne Quintero provided exceptional service and found us exactly what we were looking for in Texas City.",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg"
   },
@@ -437,9 +362,10 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: "Mark Williams", 
+    name: "Mark Williams",
     role: "Neighborhood Resident",
     content: "Living in this area, you appreciate the convenience and lifestyle. Yvonne Quintero knows the market incredibly well.",
     avatar: "https://randomuser.me/api/portraits/men/35.jpg"
   }
 ];
+
